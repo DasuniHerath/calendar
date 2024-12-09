@@ -1,8 +1,8 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QLabel
-from Add_new_user import NewUserScreen
-from Start_app import StartAppScreen
-from Train_model import TrainModelScreen  # Import Train Model Screen
+from Screens.Add_new_user import NewUserScreen
+from Screens.Start_app import StartAppScreen
+from Screens.Train_model import TrainModelScreen  # Import Train Model Screen
 import os
 from PyQt5.QtCore import QEvent
 
@@ -10,7 +10,7 @@ class MainMenu(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Main Menu")
-        self.setGeometry(100, 100, 400, 200)
+        self.setGeometry(100, 100, 600, 400)
         
         layout = QVBoxLayout()
 
